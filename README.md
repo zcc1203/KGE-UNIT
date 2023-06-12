@@ -2,65 +2,69 @@
 
 
 KGE-UNIT: Towards the unification of molecular interactions prediction based on knowledge graph and multi-task learning on drug discovery
-
+KGE-UNIT for Luo's datasets
 
 Environment
 
-Pytorch: 1.8.1
+    Pytorch: 1.8.1
 
-torchvision:0.9.1
-
-KGE-UNIT for Luo's datasets
+    torchvision:0.9.1
 
 
-Steps
 
-1 
 
-download data.zip features.zip weights.zip from baiduyun
+Steps 1 
 
-https://pan.baidu.com/s/1wfSRhR88ap6z6mY_vhzqrg
-code:kgeu
+  download data.zip features.zip weights.zip from baiduyun
 
-2
-Unzip data/data.zip
+  https://pan.baidu.com/s/1wfSRhR88ap6z6mY_vhzqrg
+  code:kgeu
 
-Unzip features/features.zip
+Steps 2
 
-Unzip weights/weights.zip
+  Unzip data/data.zip
 
----------------------------------------
-data
+  Unzip features/features.zip
 
-----luo
+  Unzip weights/weights.zip
 
-features
+/*************************************************************/
+
+/***************************Structure***************************/
+
+data/
+
+----luo/
+
+features/
 
 ----test_dense_features0_ddi.csv
 
 ----...
 
-weights
+weights/
 
 ----dismult_400_warm_1_10_ddi_luo_0.pkl
 
 ----...
 
-2 
+/*************************************************************/
 
-mkdir res
+Steps 3
 
-python train.py --lr 0.02 --epochs 40
+  mkdir res
 
-3
+  python train.py --lr 0.02 --epochs 40
 
-If you want to retrain DistMult, you can use AmpliGraph by tensorflow.
+Steps 4
 
-Environment
+  If you want to retrain DistMult, you can use AmpliGraph by tensorflow.
 
-tensorflow 1.5.0
+  Environment
 
-ampligraph 1.3.2
+    tensorflow 1.5.0
+
+    ampligraph 1.3.2
 
 
 

@@ -12,9 +12,12 @@ KGE-UNIT for Luo's datasets
 
 
 Steps
-1 training KGE models: DistMult by ampligraph (tensorflow)
+1 Unzip data/data.zip
+  Unzip features/features.zip
+  Unzip weights/weights.zip
+2 training KGE models: DistMult by ampligraph (tensorflow)
 heterogeneous features by DistMult: features/
-2 python train.py --lr 0.02 --epochs 40
+3 python train.py --lr 0.02 --epochs 40
 
 
 

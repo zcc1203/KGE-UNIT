@@ -4,13 +4,13 @@
 [KGE-UNIT: Towards the unification of molecular interactions prediction based on knowledge graph and multi-task learning on drug discovery
 KGE-UNIT for Luo's datasets]
 
-##Getting Started
+## Getting Started
 
-###Installation
+### Installation
 
 Setup conda environment:
 ```
-#Create Environment
+# Create Environment
 
 ```
 Environment

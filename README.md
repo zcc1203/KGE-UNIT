@@ -56,7 +56,7 @@ python train.py --epochs 40 --save --batch-size 32 --scenario warm
 
 --scenario:   the warm or cold scenario for the drugs, value: warm/cold
 
-##Testing
+## Testing
 
 To test KGE-UNIT by the existing model:
 

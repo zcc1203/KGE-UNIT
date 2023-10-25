@@ -41,10 +41,11 @@ ${DATA_ROOT}
 │   │   ├──kg.csv
 ```
 
+
 ## Training
 To train KGE-UNIT for cross-validation:
 ```
-python train.py --epochs 40 --save --batch-size 32
+python train.py --epochs 40 --save --batch-size 32 --scenario warm
 ```
 --save:        save the best model
 
@@ -52,7 +53,14 @@ python train.py --epochs 40 --save --batch-size 32
 
 --batch-size:  the batch size of the training, the default value is 32
 
+--scenario:   the warm or cold scenario for the drugs, value: warm/cold
 
+##Testing
 
+To test KGE-UNIT by the existing model:
+
+```
+
+```
 
 

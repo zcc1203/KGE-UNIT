@@ -18,7 +18,7 @@ pip install pykeen
 ```
 or:
 
-pip install -r requirments.txt
+pip install -r requirements.txt
 
 ## Prepare Datasets
 ```

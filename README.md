@@ -40,8 +40,7 @@ ${DATA_ROOT}
 │   │   ├──warm_start_1_1_ddi
 │   │   ├──kg.csv
 ```
-
-
+[datasets](http://www.cnblogs.com/sxdcgaq8080/p/7894828.html)
 ## Training
 To train KGE-UNIT for cross-validation:
 ```

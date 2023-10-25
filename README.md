@@ -27,7 +27,8 @@ ${DATA_ROOT}
 │   │   ├──warm_start_1_1_ddi
 │   │   ├──cold_start_1_1
 │   │   ├──cold_start_1_1_ddi
-|   ├── cv_train_1.csv
+│   │   ├──KGE_COLD_PATH
+│   │   ├──KGE_PATH
 ├── 2
     ...
 ├── 5

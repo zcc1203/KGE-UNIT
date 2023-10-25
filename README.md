@@ -16,7 +16,8 @@ conda activate kge-unit
 # Install requirements
 pip install pykeen
 ```
-or you can:
+or:
+
 pip install -r requirments.txt
 
 ## Prepare Datasets

@@ -41,7 +41,11 @@ ${DATA_ROOT}
 │   │   ├──warm_start_1_1_ddi
 │   │   ├──kg.csv
 ```
-[DATASETS](https://drive.google.com/file/d/1eWw5PKOi-q7ovPWEAbmVSLnNhIQa6Cwn/view?usp=drive_link)
+dowloads:
+
+https://drive.google.com/file/d/1eWw5PKOi-q7ovPWEAbmVSLnNhIQa6Cwn/view?usp=drive_link
+
+
 ## Training
 To train KGE-UNIT for cross-validation:
 ```

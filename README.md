@@ -47,7 +47,9 @@ To train KGE-UNIT for cross-validation:
 python train.py --epochs 40 --save --batch-size 32
 ```
 --save:        save the best model
+
 --epochs:      the total epoches of training
+
 --batch-size:  the batch size of the training, the default value is 32
 
 

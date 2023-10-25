@@ -16,12 +16,6 @@ conda activate kge-unit
 # Install requirements
 pip install pykeen
 ```
-Environment
-
-    Pytorch: 1.8.1
-
-    torchvision:0.9.1
-
 
 
 

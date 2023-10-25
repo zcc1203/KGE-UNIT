@@ -14,7 +14,7 @@ Setup conda environment:
 conda create -n kge-unit python=3.8 -y
 conda activate kge-unit
 # Install requirements
-pip install -r requirments.txt
+pip install pykeen
 ```
 Environment
 

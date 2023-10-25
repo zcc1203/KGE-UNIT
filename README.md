@@ -21,8 +21,12 @@ pip install pykeen
 ## Prepare Datasets
 ```
 ${DATA_ROOT}
-├── 1
-│   ├── cv_test_1.csv
+├── luo
+│   ├── data_folds
+│   │   ├──warm_start_1_1
+│   │   ├──warm_start_1_1_ddi
+│   │   ├──cold_start_1_1
+│   │   ├──cold_start_1_1_ddi
 |   ├── cv_train_1.csv
 ├── 2
     ...
@@ -32,22 +36,7 @@ ${DATA_ROOT}
 ├── neg_sample.csv
 ├── independent.csv
 ```
-Steps 1 
 
-  download data.zip features.zip weights.zip from baiduyun
-
-  https://pan.baidu.com/s/1wfSRhR88ap6z6mY_vhzqrg
-  code:kgeu
-
-Steps 2
-
-  Unzip data/data.zip
-
-  Unzip features/features.zip
-
-  Unzip weights/weights.zip
-
-/*************************************************************/
 
 /***************************Structure***************************/
 

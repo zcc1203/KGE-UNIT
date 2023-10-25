@@ -41,43 +41,14 @@ ${DATA_ROOT}
 │   │   ├──kg.csv
 ```
 
-
-/***************************Structure***************************/
-
-data/
-
-----luo/
-
-features/
-
-----test_dense_features0_ddi.csv
-
-----...
-
-weights/
-
-----dismult_400_warm_1_10_ddi_luo_0.pkl
-
-----...
-
-/*************************************************************/
-
-Steps 3
-
-  mkdir res
-
-  python train.py --lr 0.02 --epochs 40
-
-Steps 4
-
-  If you want to retrain DistMult, you can use AmpliGraph by tensorflow.
-
-  Environment
-
-    tensorflow 1.5.0
-
-    ampligraph 1.3.2
-
+## Training
+To train KGE-UNIT for cross-validation:
+```
+python train.py --epochs 40 --save --batch-size 32
+```
+--save:        save the best model
+--epochs:      the total epoches of training
+--batch-size:  the batch size of the training, the default value is 32
 
 
 

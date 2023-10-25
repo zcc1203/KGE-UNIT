@@ -29,13 +29,15 @@ ${DATA_ROOT}
 │   │   ├──cold_start_1_1_ddi
 │   │   ├──KGE_COLD_PATH
 │   │   ├──KGE_PATH
-├── 2
+│   │   ├──kg.csv
+│   │   ├──kg_all.txt
+│   │   ├──kg_cold.csv
+│   │   ├──...
     ...
-├── 5
-├── add_feature.json
-├── pos_sample.csv
-├── neg_sample.csv
-├── independent.csv
+├── BioKG
+│   ├── data_folds
+│   │   ├──warm_start_1_1
+│   │   ├──warm_start_1_1_ddi
 ```
 
 

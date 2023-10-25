@@ -19,7 +19,19 @@ pip install pykeen
 
 
 ## Prepare Datasets
-
+```
+${DATA_ROOT}
+├── 1
+│   ├── cv_test_1.csv
+|   ├── cv_train_1.csv
+├── 2
+    ...
+├── 5
+├── add_feature.json
+├── pos_sample.csv
+├── neg_sample.csv
+├── independent.csv
+```
 Steps 1 
 
   download data.zip features.zip weights.zip from baiduyun

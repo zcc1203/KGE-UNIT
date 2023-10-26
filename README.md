@@ -74,4 +74,10 @@ To test KGE-UNIT by the existing model:
 
 ## Comparison
 
+```
+python comparison/kge_auroc.py --kge rotate --save
+```
 
+--save:        save the model
+
+--kge:         choose the kge model

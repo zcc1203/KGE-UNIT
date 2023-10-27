@@ -90,3 +90,5 @@ python comparison/ml_luo_dti.py
 python comparison/svm_biokg_ddi.py
 python comparison/svm_biokg_dti.py
 ```
+KGE_NFM:https://github.com/hlf20010508/KGE_NFM
+KGNN:   https://github.com/xzenglab/KGNN

@@ -80,3 +80,13 @@ python comparison/kge_auroc.py --kge rotate --save
 --save:        save the model
 
 --kge:         choose the kge model
+
+other codes:
+```
+python comparison/deepdti_luo.py
+python comparison/deepdti_biokg.py
+python comparison/ml_luo_ddi.py
+python comparison/ml_luo_dti.py
+python comparison/svm_biokg_ddi.py
+python comparison/svm_biokg_dti.py
+```

@@ -346,7 +346,7 @@ def predict(i,model,use_pro,patience):
                                 test_hf_ddi,test_sf_ddi_d1,test_sf_ddi_d2,mode = 'test')
     train_generator = data.DataLoader(train_set,**params)
     test_generator  = data.DataLoader(test_set,**params)
-    model_kgeunit =  torch.load(os.path.join(args.kgeunit,'KGE-UNIT_'+str(i)+".pth"))
+    model_kgeunit =  torch.load(os.path.join(args.kgeunit,'KGE-UNIT_'+str(i)+".pth"),map_location = torch.device('cuda:0'))
     test_ddi_performance,test_dti_performance = test(test_generator, model_kgeunit,0,i)
 
     return test_ddi_performance,test_dti_performance
@@ -357,7 +357,7 @@ def main():
     use_cuda = args.gpu > 0 and torch.cuda.is_available()
     #import pdb;pdb.set_trace()
     if use_cuda:
-        torch.cuda.set_device(4)
+        torch.cuda.set_device(0)
         model = model.cuda()
     loss_history=[]
     res_path = 'res/'+args.scenario+'/'+KGE_NAME+'.txt'

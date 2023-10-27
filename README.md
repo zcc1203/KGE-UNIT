@@ -66,9 +66,8 @@ To test KGE-UNIT by the existing model:
 ```
 python train.py --batch-size 32 --scenario warm --kge KGE-PATH --kgeunit 'KGE-UNIT-PATH'
 ```
-
-##Ablation
-
+The pretrained model can be downloaded:
+https://doi.org/10.5281/zenodo.8435763
 
 
 ## Comparison

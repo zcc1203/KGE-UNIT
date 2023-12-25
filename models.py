@@ -14,26 +14,26 @@ np.random.seed(1)
 
 
 
-
+###The implementation of KGE-UNIT
 class KGE_UNIT(nn.Sequential):
     def __init__(self, **config):
         super(KGE_UNIT, self).__init__()
+        #The output dim of structure features
         self.hidden_dim = config["hidden_dim"]
-        #self.hidden_dim_hf = config["hidden_dim_hf"]
+        #The output dim of heterogeneous features
         self.hidden_dim_hf = self.hidden_dim*2
         embedding_dim = config['embed_dim']
         #dim_ = self.hidden_dim*2+self.hidden_dim_hf
         dim_ = embedding_dim
-        #import pdb;pdb.set_trace()
         self.dim_ =dim_
         self.task_num= config['task_num']
-        #self.protein_layers= [self.hidden_dim,256,128,self.hidden_dim]
-        #self.drug_layers = [self.hidden_dim,256,128,self.hidden_dim]
+
         self.protein_layers= [self.hidden_dim,256,self.hidden_dim]
         self.drug_layers = [self.hidden_dim,256,self.hidden_dim]
-        #self.protein_layers = [dim_,64,self.hidden_dim]
-        #self.drug_layers = [dim_,64,self.hidden_dim]
+
+        # The structure of CNN for heterogeneous features of dti
         self.hf_dti_layers= [800,512,256,self.hidden_dim_hf]
+        # The structure of CNN for heterogemeous features of ddi
         self.hf_ddi_layers= [800,512,256,self.hidden_dim_hf]
         
         print("NUM HEAD = 4\n")
@@ -159,6 +159,8 @@ class KGE_UNIT(nn.Sequential):
         #pred_ddi = F.sigmoid(pred_ddi)
         #import pdb;pdb.set_trace()
         return pred_dti,pred_ddi
+
+
 class LabelSmoothingCrossEntropy(nn.Module):
     def __init__(self, eps=0.1, reduction='mean'):
         super(LabelSmoothingCrossEntropy, self).__init__()

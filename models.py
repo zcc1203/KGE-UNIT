@@ -38,8 +38,10 @@ class KGE_UNIT(nn.Sequential):
         
         print("NUM HEAD = 4\n")
         print("embedding 32 \n")
+        # The structure of CNN for structure features of drug
         self.drug_cnn = nn.ModuleList([nn.Conv1d(in_channels=self.drug_layers[i], out_channels=self.drug_layers[i+1],
                                                  kernel_size=3, padding=1) for i in range(len(self.drug_layers)-1)])
+        # The structure of CNN for structure features of protein
         self.protein_cnn = nn.ModuleList([nn.Conv1d(in_channels=self.protein_layers[i], out_channels=self.protein_layers[i+1],
                                         kernel_size=3, padding=1) for i in range(len(self.protein_layers)-1)])
         self.hf_dti_cnn = nn.ModuleList([nn.Conv1d(in_channels=self.hf_dti_layers[i], out_channels=self.hf_dti_layers[i+1],

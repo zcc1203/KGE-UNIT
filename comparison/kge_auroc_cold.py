@@ -24,12 +24,12 @@ print("curDirectory_new:", curDirectory)
 
 
 
-data_path = './data/luo/data_folds/warm_start_1_1/'
-data_path_ddi = './data/luo/data_folds/warm_start_1_1_ddi/'
-SAVE_PATH = './run_comparison/warm/'
+data_path = './data/luo/data_folds/cold_start_1_1/'
+data_path_ddi = './data/luo/data_folds/cold_start_1_1_ddi/'
+SAVE_PATH = './run_comparison/cold/'
 
 parser = ArgumentParser(description='KGE TRAINING.')
-parser.add_argument('--kge', default='MuRe')
+parser.add_argument('--kge', default='ConvE')
 parser.add_argument('--save', action='store_true', help='only save final checkpoint')
 
 
@@ -37,7 +37,7 @@ parser.add_argument('--save', action='store_true', help='only save final checkpo
 args = parser.parse_args()
 KGE_NAME = args.kge
 
-with open(os.path.join('./comparison/models', KGE_NAME,'best_pipeline/pipeline_config.json'), 'r') as config_file:
+with open(os.path.join('./comparison/models/cold/', KGE_NAME,'best_pipeline/pipeline_config.json'), 'r') as config_file:
     model_config = json.load(config_file)
 import pdb;pdb.set_trace()
 def avg(inp):

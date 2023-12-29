@@ -13,7 +13,7 @@
     "dataset_kwargs": {
       "create_inverse_triples": false
     },
-    "model": "BoxE",
+    "model": "autoSF",
     "model_kwargs": {
       "embedding_dim": 64
     },

@@ -86,7 +86,7 @@ for yy in range(1):
     data.to_csv(OUTPUT_KG_PATH,header=None,index=False,sep='\t')
     tf = TriplesFactory.from_path(OUTPUT_KG_PATH)
 
-    training,validation,testing = tf.split([.8,.000001,0.199999])
+    training,validation = tf.split([.8,.2])
     print(yy)
     print(KGE_NAME)
     print("-------------------------\n")
@@ -127,7 +127,6 @@ for yy in range(1):
         direction=model_config["optuna"]["direction"],
         sampler=model_config["optuna"]["sampler"],
         pruner=model_config["optuna"]["pruner"],)
-    result.save_to_directory("comparison/models/MuRe/")
     if args.save:
         if not os.path.exists(os.path.join(SAVE_PATH,KGE_NAME)):
             os.makedirs(os.path.join(SAVE_PATH,KGE_NAME))

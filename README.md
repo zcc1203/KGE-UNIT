@@ -64,7 +64,7 @@ python train.py --epochs 40 --save --batch-size 32 --scenario warm
 To test KGE-UNIT by the existing model:
 
 ```
-python train.py --batch-size 32 --scenario warm --kge KGE-PATH --kgeunit 'KGE-UNIT-PATH'
+python test.py --scenario warm --kge KGE-PATH --kgeunit 'KGE-UNIT-PATH'
 ```
 The pretrained model can be downloaded:
 https://doi.org/10.5281/zenodo.8435763

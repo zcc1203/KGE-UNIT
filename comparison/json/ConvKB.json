@@ -63,7 +63,7 @@
     }
   },
   "optuna": {
-    "n_trials": 2,
+    "n_trials": 30,
     "timeout": 172800,
     "metric": "hits@10",
     "direction": "maximize",

@@ -2,7 +2,7 @@
 
 
 [KGE-UNIT: Towards the unification of molecular interactions prediction based on knowledge graph and multi-task learning on drug discovery]
-![Uploading 图片.png…]()
+
 
 ## Getting Started
 

@@ -96,7 +96,7 @@ KGNN:   https://github.com/xzenglab/KGNN
 
 
 
-###Notebooks
+### Notebooks
 Fig.1. The structure of KGE-UNIT, created by Visio. 
 
 Fig.2. The structure of the joint multi-task predictor in KGE-UNIT, also created by Visio. 

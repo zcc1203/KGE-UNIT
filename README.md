@@ -1,9 +1,9 @@
-# KGE-UNIT
+# KGE-UNIT: Towards the unification of molecular interactions prediction based on knowledge graph and multi-task learning on drug discovery
 
-
-[KGE-UNIT: Towards the unification of molecular interactions prediction based on knowledge graph and multi-task learning on drug discovery]
 The prediction of molecular interactions is vital for drug discovery. Existing methods often focus on individual prediction tasks and overlook the relationships between them. Additionally, certain tasks encounter limitations due to insufficient data availability, resulting in limited performance. To overcome these limitations, we propose KGE-UNIT, a unified framework that combines knowledge graph embedding (KGE) and multi-task learning, for simultaneous prediction of drug-target interactions (DTIs) and drug-drug interactions (DDIs) and enhancing the performance of each task, even when data availability is limited. Via KGE, we extract heterogeneous features from the drug knowledge graph to enhance the structural features of drug and protein nodes, thereby improving the quality of features. Additionally, employing multi-task learning, we introduce an innovative predictor that comprises the task-aware CNN-based encoder and the task-aware attention decoder which can fuse better multimodal features, capture the contextual interactions of molecular tasks and enhance task awareness, leading to improved performance.
+
 ![image](KGE-UNIT.png)
+
 ## Getting Started
 
 ### Installation

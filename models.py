@@ -76,8 +76,9 @@ class KGE_UNIT(nn.Sequential):
                 #self.fc_layers.append(nn.Dropout(dropout_prob))
         self.fc_layers_ddi = self.fc_layers
         self.fc_layers_2 = nn.ModuleList()
-        #for i in range(len(self.fc_hidden_dim)):
+        #The loss of cross entropy
         self.criterion = nn.BCEWithLogitsLoss()
+        #The different implemence of cross entropy
         self.criterion_2cls = nn.CrossEntropyLoss()
         #import pdb;pdb.set_trace()
     def forward(self,hf_dti,sf_dti_drug,sf_dti_protein,hf_ddi,sf_ddi_d1,sf_ddi_d2):

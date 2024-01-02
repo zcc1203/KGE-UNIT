@@ -19,6 +19,11 @@ or:
 
 pip install -r requirements.txt
 
+or:
+
+https://hub.docker.com/repository/docker/ccsimple/kge-unit/general
+
+ 
 ## Prepare Datasets
 ```
 ${DATA_ROOT}
